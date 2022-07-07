@@ -1,9 +1,9 @@
-const numero = Number(prompt('Digite um número:')) //pega o numero digitado pelo usuário
-const numeroTitulo = document.getElementById('numero-titulo') // variável do número que vai entrar
+const numero = Number(prompt('Digite um número:')) 
+const numeroTitulo = document.getElementById('numero-titulo') 
 
 const texto = document.getElementById('texto')
 
-numeroTitulo.innerHTML = numero //dentro do numeroTitulo vai entrar o numero digitado
+numeroTitulo.innerHTML = numero 
 texto.innerHTML = 
 `<p>Seu número + 2 é: <b>${(numero + 2)}</b></p>
 <p>A raiz quadrada de ${numero} é: <b>${(Math.sqrt(numero)).toFixed(2)}</b> </p>
