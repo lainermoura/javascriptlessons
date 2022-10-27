@@ -66,5 +66,4 @@ function setResultado (msg, isValid) {
 
   p.innerHTML = msg
   resultado.appendChild(p)
-  
 }
