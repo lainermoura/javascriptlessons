@@ -1,4 +1,4 @@
-let relogio = () => {
+let clock = () => {
     let getTimeFromSeconds = (seconds) => {
         const data = new Date(seconds * 1000)
         return data.toLocaleTimeString('pt-BR', {
@@ -41,10 +41,11 @@ let relogio = () => {
         if (el.classList.contains('zerar')) {
             relogio.classList.remove('pausado')
             clearInterval(timer)
+            seconds = 0
             relogio.innerHTML = '00:00:00'
         }
     
     })    
 }
 
-relogio()
+clock()
